@@ -1,0 +1,6 @@
+﻿enum Race
+{
+	Earthlings,
+	Martian
+}
+

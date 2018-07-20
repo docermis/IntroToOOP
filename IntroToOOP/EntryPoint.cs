@@ -1,18 +1,22 @@
-﻿using PoinstAndLines;
+﻿using IntroToOOP;
+using PoinstAndLines;
 using System;
 
 class EntryPoint
 {
 	static void Main()
 	{
-		Point point = new Point(5, 3);
+		User user = new User("Vachev", Race.Earthlings);
+		User secondUser = new User();
 
-		Point pointTwo = new Point();
+		user.Password = 8;
 
-		pointTwo.X = 5;	
+		Utilities.ColorfulWriteLine(user.Username, ConsoleColor.Blue);
+		user.SayMyName();
 
-		Console.WriteLine(point.X);
-		Console.WriteLine(point.Y);
+		Console.WriteLine(user.Username);
+		Console.WriteLine(User.currentId);
+
 
 		Console.WriteLine("Press enter to close...");
 		Console.ReadLine();
